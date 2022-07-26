@@ -1,0 +1,1 @@
+cmd_/home/kaya/kernelLearning/HelloWorld/mymodule.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/kaya/kernelLearning/HelloWorld/mymodule.ko /home/kaya/kernelLearning/HelloWorld/mymodule.o /home/kaya/kernelLearning/HelloWorld/mymodule.mod.o;  true
