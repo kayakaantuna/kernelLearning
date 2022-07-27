@@ -1,0 +1,1 @@
+cmd_/home/kaya/kernelLearning/DeviceNumAndFiles/dev_nr.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/kaya/kernelLearning/DeviceNumAndFiles/dev_nr.ko /home/kaya/kernelLearning/DeviceNumAndFiles/dev_nr.o /home/kaya/kernelLearning/DeviceNumAndFiles/dev_nr.mod.o;  true

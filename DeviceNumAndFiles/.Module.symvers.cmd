@@ -1,0 +1,1 @@
+cmd_/home/kaya/kernelLearning/DeviceNumAndFiles/Module.symvers := sed 's/\.ko$$/\.o/' /home/kaya/kernelLearning/DeviceNumAndFiles/modules.order | scripts/mod/modpost -m -a  -o /home/kaya/kernelLearning/DeviceNumAndFiles/Module.symvers -e -i Module.symvers   -T -

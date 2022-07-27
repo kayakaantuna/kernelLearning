@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kaya/kernelLearning/DeviceNumAndFiles'
+make -C /lib/modules/5.15.0-41-generic/build M=/home/kaya/kernelLearning/DeviceNumAndFiles modules
+make: Leaving directory '/home/kaya/kernelLearning/DeviceNumAndFiles'
+ 

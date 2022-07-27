@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kaya/kernelLearning'
+make: Leaving directory '/home/kaya/kernelLearning'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
