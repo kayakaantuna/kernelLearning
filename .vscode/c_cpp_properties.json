@@ -7,7 +7,8 @@
                 "/usr/lib/modules/5.11.0-27-generic/build/arch/x86/include/",
                 "/usr/lib/modules/5.11.0-27-generic/build/include/",
                 "/usr/lib/modules/5.11.0-27-generic/build/arch/x86/include/generated/",
-                "/usr/include/linux/"
+                "/usr/include/linux/",
+                "/usr/lib/gcc/x86_64-linux-gnu/9/include/"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
