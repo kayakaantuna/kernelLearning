@@ -1,0 +1,1 @@
+cmd_/home/kaya/kernelLearning/FileOperations/Module.symvers := sed 's/\.ko$$/\.o/' /home/kaya/kernelLearning/FileOperations/modules.order | scripts/mod/modpost -m -a  -o /home/kaya/kernelLearning/FileOperations/Module.symvers -e -i Module.symvers   -T -

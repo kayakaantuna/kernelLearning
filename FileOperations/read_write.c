@@ -5,19 +5,19 @@
 #include <linux/uaccess.h>
 
 MODULE_LICENSE("GPL");
-MODULE_LICENSE("KAYA");
+MODULE_AUTHOR("KAYA");
 MODULE_DESCRIPTION("Registers a device nr. and implement some callback functions.");
 
 /* Buffer for data */
 static char buffer[255];
-static int buffer_pointer;
+static int buffer_pointer = 0;
 
 /* Variables for device and device class */
 static dev_t my_device_nr;
 static struct class *my_class;
 static struct cdev my_device;
 
-#define DRIVER_NAME  "dummydriver"
+#define DRIVER_NAME "dummydriver"
 #define DRIVER_CLASS "MyModuleClass"
 
 /**
@@ -117,7 +117,7 @@ static int __init ModuleInit(void)
     cdev_init(&my_device, &fops);
 
     /* Registering device to kernel */
-    if(cdev_add(&my_device, my_device_nr, 1) != -1)
+    if(cdev_add(&my_device, my_device_nr, 1) == -1)
     {
         printk("Registering of device to kernel failed!\n");
         goto Add_Error;
@@ -132,7 +132,7 @@ FileError:
     class_destroy(my_class);
 
 ClassError:
-    unregister_chrdev(my_device_nr, DRIVER_NAME);
+    unregister_chrdev_region(my_device_nr, DRIVER_NAME);
     return -1;
 }
 
@@ -141,7 +141,7 @@ static void __exit ModuleExit(void)
     cdev_del(&my_device);
     device_destroy(my_class, my_device_nr);
     class_destroy(my_class);
-    unregister_chrdev(my_device_nr, DRIVER_NAME);
+    unregister_chrdev_region(my_device_nr, DRIVER_NAME);
     printk("Goodbye, Kernel\n");
 }
 
