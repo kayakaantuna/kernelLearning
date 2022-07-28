@@ -1,0 +1,1 @@
+cmd_/home/kaya/kernelLearning/GpioDriver/gpio_driver.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/kaya/kernelLearning/GpioDriver/gpio_driver.ko /home/kaya/kernelLearning/GpioDriver/gpio_driver.o /home/kaya/kernelLearning/GpioDriver/gpio_driver.mod.o;  true

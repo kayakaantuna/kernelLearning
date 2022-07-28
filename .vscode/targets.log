@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 28 15:22:05 2022
+# Make data base, printed on Thu Jul 28 15:42:32 2022
 
 # Variables
 
@@ -197,7 +197,7 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/f06db117_1b08_4c5b_ad7c_b88f8d1ff8fb
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e45a69f6_f10d_483e_ab52_3d2381daa96e
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -221,7 +221,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 71008
+VSCODE_PID = 95381
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=44995e8bd0e647cfc14ab33a62e22c2f
 # variable set hash-table stats:
@@ -233,9 +233,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=44995e8bd0e647cfc14ab33
 
 # Directories
 
-# . (device 66309, inode 6559496): 8 files, no impossibilities.
+# . (device 66309, inode 6559496): 9 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -281,17 +281,17 @@ GNUmakefile:
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
- 
 # No 'vpath' search paths.
+ 
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 157 B / avg = 9 B
-# current buf: size = 8162 B / used = 157 B / count = 16 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 168 B / avg = 9 B
+# current buf: size = 8162 B / used = 168 B / count = 17 / avg = 9 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=1/19=5%
-# Finished Make data base on Thu Jul 28 15:22:05 2022
+# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Thu Jul 28 15:42:32 2022
 
  
